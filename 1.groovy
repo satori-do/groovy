@@ -4,7 +4,9 @@ println("Hello World!!!");
 
 // Function definiution is here
 def printme(String str){
+  for (i = 0; i <3; i++) {
     println str
+  }
 }
 
 // Now you can call printme Function
