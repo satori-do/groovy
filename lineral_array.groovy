@@ -9,7 +9,7 @@ File[] listOfFilesF = folder.listFiles();
 
   for (int i = 0; i < listOfFilesF.length; i++) {
     if (!listOfFilesF[i].name.startsWith("_")) {
-      listOfFiles[i] = (listOfFilesF[i].getName());
+      listOfFiles[i] = (listOfFilesF[i].getName().split("\\.")[0]);
       println listOfFiles[i];
       //listOfFiles.remove();
     }
