@@ -8,7 +8,8 @@ File[] listOfFilesF = folder.listFiles();
   String[] listOfFiles = new String[listOfFilesF.length];
 
   for (int i = 0; i < listOfFilesF.length; i++) {
-    if (!listOfFilesF[i].name.startsWith("_")) {
+    //if (listOfFilesF[i].name.startsWith("_")) {
+    if (listOfFilesF[i].name.endsWith("Cept.php")) {
       listOfFiles[i] = (listOfFilesF[i].getName().split("\\.")[0]);
       println listOfFiles[i];
       //listOfFiles.remove();
